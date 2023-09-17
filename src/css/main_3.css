@@ -1,0 +1,248 @@
+
+:root{
+    --body-bg-color:rgb(38, 56, 123);
+/* ----------------------------👉 HEADER SECTION 👈  list variables------------------------ */
+    --hdr-logo: rgb(250, 250, 100);
+/* ------------------------------------------------------------------------------------------ */
+    --shadow:aqua;
+    --hdr_primary:white;
+    --hdr_bg_color:aqua;
+    --hdr_bdr:5px solid aqua;
+    --hdr_bdr_radius:20px 20px;
+    --hdr_ul_li_padding:10px 10px;
+    --hdr_li_margin:20px 20px;
+    --hdr_shadow: 1px 1px aqua;
+/* ------------------------------------------------------------------------------------------ */
+
+    --hdr-color-hover:yellow;
+    --hdr-shadow-hover:1px 1px red;
+
+    /* ----------------------------👉 HEADER container SECTION 👈  contianer variables------------------------ */
+    --hdr_bg_color_container: #202124;
+    /* -------------------👉 HEADER SECTION 👈 button variables */
+    --hdr_btn_txt_shadow:1px 2px yellow;
+    --hdr_btn_color:red;
+    --hdr_btn_bg:rgb(255, 255, 112);
+/* ------------------------------------------👉 IMG SECTION 👈 variables----------------- */
+    --img_bdr_rad_sec:33.33px;
+    --img_bdr_rad_img:66.66px;
+    --img_bdr:3px double red;
+    --img_box_shadow:10px  5px 10px   aqua;
+
+/* ------------------------------👉 about SECTION 👈 variables----------- */
+    --abt_color:aqua;
+    --abt-bg-color:#202124;
+
+/* ------------------------------👉 master_img SECTION 👈 variables----------- */
+    --mstr_img_bdr:5px double red;
+    --mstr_img_bdr_rad:66.66px;
+
+/* ------------------------------👉 icon SECTION 👈 variables----------- */
+    --icon_bdr:1px solid aqua;
+    --icon_bdr_rad:33.33px;
+    --icon_bg_color:white;
+}
+/* ------------------------------------------------------------------------------------------ */
+
+body{
+    background-color: var(--body-bg-color);
+}
+/* ============================================== 👉 HEADER SECTION 👈 ====================== */
+.hdr_container{
+    display: flex;
+    background-color:var(--hdr_bg_color_container);
+    justify-content: space-evenly;
+    text-align: center;
+    border: 2px double  lawngreen;
+    border-radius: 33.33px;
+    align-content: center;
+}
+
+.logo{
+    color:var(--hdr-logo);
+}
+
+.hdr_nav_bar > ul{
+    justify-items: end;
+    padding: 20px;
+    margin-left: 500px;
+    text-shadow: var(--hdr_shadow);
+}
+
+.hdr_nav_bar > ul > li{
+    display: inline;
+    min-width: 20px;
+    border: var(--hdr_bdr);
+    list-style: none;
+    padding: var(--hdr_ul_li_padding);
+    margin: var(--hdr_li_margin);
+    border-radius: var(--hdr_bdr_radius);
+}
+
+.hdr_nav_bar > ul > li >a:hover{
+    color:var(--hdr-color-hover);
+    text-shadow:var(--hdr-shadow-hover);
+}
+
+.hdr_btn > button{
+    color: var(--hdr_btn_color);
+    background-color: var(--hdr_btn_bg);
+    text-shadow:var(--hdr_btn_shadow);
+    margin-top: 40px;
+}
+
+/* =================================================👉 MAIN SECTION 👈====================== */
+.container{
+    display: flex;
+    -ms-flex-align: baseline;
+    justify-content: space-evenly;
+    border: 1px solid brown;
+    padding: 20px;
+    align-items: center;
+    width: auto;
+    
+   
+}
+/* --------------------------- img-section------------------------------ */
+.img_sec{                           /* BOX-1 */  /* hero img */
+    width: auto;
+    height: 300px;
+    padding: 50px;
+    padding-left: 10px;
+    border-radius:var(--img_bdr_rad);
+    /* border:var(--img_bdr); */
+    box-shadow:10px 15px 10px yellow;
+    
+}
+
+.img_sec > img{
+    border:var(--img_bdr);
+    box-shadow:var(--img_box_shadow);
+    border-radius:var(--img_bdr_rad_img);
+    justify-content: center;  
+    margin-bottom: 20px;
+
+    
+}
+
+.img_sec_icon{
+    margin: 50px;
+    margin-left:10px;
+    background-color: white;
+}
+
+.img_sec_icon > a > span{
+    margin: 2px;
+    padding: 10px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+.abt_sec{                           /* BOX-2 */   /* 👉 about_section 👈*/
+    color:var(--abt_color);
+    background-color: var(--abt-bg-color);  
+    border: 1px solid red;
+    flex:1;
+    padding: 100px 0px;
+    margin: 20px;
+    width:fit-content;
+    height: auto;
+    text-align:start;
+    text-wrap: wrap;
+}
+
+.abt_sec > h2, p{ 
+    text-indent: 10px;
+
+}
+
+.master_img > img{                          /* BOX-3 */
+    width: auto;
+    height: fit-content;
+    border: var(--mstr_img_bdr);
+    padding: 20px 0px;
+    margin: 20px 0px;
+    border-radius: var(--mstr_img_bdr_rad);
+    box-shadow: 20px 15px 10px  var(--shadow); 
+    width: fit-content;
+}
+/* -------------------------------------- work experience----------------- */
+.info_sec{     /* 👉 CONTAINER 👈*/
+    color:var(--abt_color);
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: center;  
+    background-color: var(--hdr_bg_color_container); 
+}
+
+.tech_stack_sec{  /* 👉 BOX-1 👈*/
+    color:var(--abt_color);
+    color: beige;
+}
+
+.icon_sec{     /* 👉 BOX-2 👈*/
+    color:var(--abt_color);
+    border: var(--icon_bdr);
+    padding: 10px 30px;
+    margin: 10px 30px;
+}
+/* --------------------------------------------------------------------- */
+
+.html_ico {    /* 👉 BOX-2 DIV 👈*/
+    color:var(--abt_color);
+    width: 100px;
+    height:100px;
+    background-color: var(--icon_bg_color);
+    border-radius: var(--icon_bdr_rad);
+}
+
+.html_ico:hover{     /* 👉 BOX-2 DIV - hover section 👈*/
+    cursor: pointer;
+    background-color:#f36518;    
+}
+/* --------------------------------------------------------------------- */
+
+.css_ico {     /* 👉 BOX-2 DIV 👈*/
+    width: 100px;
+    height:100px;
+    border-radius:var(--icon_bdr_rad);
+    background-color: var(--icon_bg_color);
+}
+
+.css_ico:hover{     /* 👉 BOX-2 DIV - hover section 👈*/
+    cursor: pointer;
+    background-color:#0096dc;    
+}
+
+/* =====================================👉 FOOTER SECTION 👈====================== */
+.ftr_container{
+    display: flexbox;
+    text-align: center;
+    color: antiquewhite;
+    border: 2px solid lawngreen;
+    border-radius: 33.33px;
+}
+
+.para{
+    border: 2px solid red;
+}
+
+/* =====================================👉 media query👈====================== */
+
+@media screen and (max-width: 500px){
+    body{
+        background-color: darksalmon;
+    }
+    .master_img > img{
+        visibility: hidden;
+    }
+    .abt_sec{ 
+        flex:2;
+        width: auto;
+        background-color: green;
+    }
+}
+
+/* =====================================👉 media query👈====================== */
